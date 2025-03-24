@@ -1,9 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.util.List, com.TylerPac.ToDoList" %>
 <%
+    @SuppressWarnings("unchecked")
     List<ToDoList> todos = (List<ToDoList>) request.getAttribute("todos");
-
-
 %>
 
 <html>
@@ -30,7 +29,9 @@
 
 <!-- Add Item Form -->
 <form action="todos" method="post">
-    <input type="text" name="todoName" required placeholder="Enter new to do list item">
+    <label>
+        <input type="text" name="todoName" required placeholder="Enter new to do list item">
+    </label>
     <button type="submit" name="action" value="add">Add</button>
 </form>
 </body>
