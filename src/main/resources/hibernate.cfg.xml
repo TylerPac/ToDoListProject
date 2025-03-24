@@ -1,0 +1,25 @@
+<hibernate-configuration>
+    <session-factory>
+        <!-- MySQL JDBC Driver -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+
+        <!-- MySQL Database Connection URL -->
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/module4</property>
+
+
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">Kora4386!</property>
+
+
+        <!-- Hibernate Configuration -->
+        <!--  Remove Logging
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        -->
+        <property name="hibernate.show_sql">false</property>
+        <property name="hibernate.format_sql">false</property>
+        <property name="hibernate.use_sql_comments">false</property>
+
+    </session-factory>
+</hibernate-configuration>
