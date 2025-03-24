@@ -2,6 +2,8 @@
 <%@ page import="java.util.List, com.TylerPac.ToDoList" %>
 <%
     List<ToDoList> todos = (List<ToDoList>) request.getAttribute("todos");
+
+
 %>
 
 <html>
